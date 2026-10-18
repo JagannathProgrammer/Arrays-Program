@@ -24,7 +24,7 @@ public class Arrays {
         Numbers2[9] = 60;
 
 
-        // Method 1: Print all elements Normaly.
+        // Method 1: Print all elements Normal Method. (Direct Assignment)
         System.out.print("Array Numbers are: "+Numbers[0]);
         System.out.print(", "+Numbers[1]);
         System.out.print(", "+Numbers[2]);
