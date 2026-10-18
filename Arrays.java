@@ -1,4 +1,5 @@
 
+// One-dimensional array
 // 1: Declare and initialize an array
 public class Arrays {
     public static void main(String[] args) {
