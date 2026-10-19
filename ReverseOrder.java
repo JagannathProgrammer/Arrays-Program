@@ -1,9 +1,9 @@
 
 // Print an Array in Reverse Order
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+
 public class ReverseOrder {
     public static void main(String[] args) {
         int[] Numbers = {10, 20, 30, 40, 50, 100, 90, 80, 70, 60};
@@ -26,7 +26,7 @@ public class ReverseOrder {
         }
         System.out.println();
 
-        // 3. In-built Method (Arrays.sort())
+        // 3. In-built Method (Collections.reverse())
         // Convert int[] to a List<Integer>
         List<Integer> list = new ArrayList<>();
         for (int num : Numbers) {
@@ -34,7 +34,7 @@ public class ReverseOrder {
         }
         // Reverse the list
         Collections.reverse(list);
-        // Convert back to int[]
+        // Print the reversed list
         System.out.println("Reverse Order:");
         System.out.println(list);
 
