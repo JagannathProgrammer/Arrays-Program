@@ -64,7 +64,5 @@ public class Frequency {
         for (Map.Entry<Integer, Integer> entry : frequencyMap.entrySet()) {
             System.out.println(entry.getKey() + " = " + entry.getValue() + " times");
         }
-
-    
     }    
 }
