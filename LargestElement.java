@@ -32,6 +32,6 @@ public class LargestElement {
 
         // Using an In-built Method
         int largest1 = Arrays.stream(Numbers).max().getAsInt();
-        System.out.println("Largest Element is: "+largest);
+        System.out.println("Largest Element is: "+largest1);
     }
 }
