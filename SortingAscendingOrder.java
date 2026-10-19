@@ -1,31 +1,43 @@
+
 // Sort an Array in Ascending Order
 import java.util.Arrays;
 public class SortingAscendingOrder {
     public static void main(String[] args) {
         int[] Numbers = {10, 20, 30, 40, 50, 100, 90, 80, 70, 60};
-        int temp;
+        
+        // 1. Normal Method (Without a Loop)
+        // Manually arrange in ascending order
+        int[] Assending = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
+        System.out.println("Assending Order:");
+        System.out.println(
+            Assending[0] + " " + Assending[1] + " " + 
+            Assending[2] + " " + Assending[3] + " " + 
+            Assending[4] + " " + Assending[5] + " " +
+            Assending[6] + " " + Assending[7] + " " +
+            Assending[8] + " " + Assending[9]
+        );
 
-        // For Loop Method (Bubble Sort)
+        // 2. For Loop Method (Automatic Sorting)
+        //int temp; // we can also declare temp variable outside the loop
         for (int i = 0; i < Numbers.length-1; i++) {
-            for (int j = 0; j < Numbers.length-1-i; j++) {
-                if (Numbers[j] > Numbers[j+1]) {
-                    temp = Numbers[j];
-                    Numbers[j] = Numbers[j+1];
-                    Numbers[j+1] = temp;
+            for (int j = i + 1; j < Numbers.length; j++) {
+                if (Numbers[i] > Numbers[j]) {
+                    int temp = Numbers[i];
+                    Numbers[i] = Numbers[j];
+                    Numbers[j] = temp;
                 }
             }
         }
-
-        System.out.print("Sorted Array in Ascending Order: ");
-        for (int n: Numbers) {
-            System.out.print(n + " ");
+        System.out.print("Ascending Order: ");
+        for (int i = 0; i < Numbers.length; i++) {
+            System.out.print(Numbers[i] + " ");
         }
         System.out.println();
 
-
-
-        // Using an In-built Method
+        // 3. In-built Method (Arrays.sort())
+        // Sort array in ascending order
         Arrays.sort(Numbers);
-        System.out.print("Sorted Array in Ascending Order: "+ Arrays.toString(Numbers));
+        System.out.println("Ascending Order:");
+        System.out.println(Arrays.toString(Numbers));
     }
 }
