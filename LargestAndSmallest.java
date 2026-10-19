@@ -1,4 +1,4 @@
-public class ArraysLargestAndSmallest {
+public class LargestAndSmallest {
     public static void main(String[] args) {
         // Method 1: Declare and initialize together
         int[] Numbers = {10, 20, 30, 40, 50, 100, 90, 80, 70, 60};

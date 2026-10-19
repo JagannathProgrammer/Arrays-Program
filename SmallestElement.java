@@ -1,5 +1,5 @@
 // Find the smallest element an Arrays.
-public class ArraysSmallest {
+public class SmallestElement {
     public static void main(String[] args) {
         // Method 1: Declare and initialize together
         int[] Numbers = {10, 20, 30, 40, 50, 100, 90, 80, 70, 60};

@@ -1,6 +1,6 @@
 // Sort an Array in Ascending Order
 import java.util.Arrays;
-public class ArraysSorting {
+public class SortingAscendingOrder {
     public static void main(String[] args) {
         int[] Numbers = {10, 20, 30, 40, 50, 100, 90, 80, 70, 60};
         int temp;

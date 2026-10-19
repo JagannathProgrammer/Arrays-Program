@@ -1,7 +1,7 @@
 // Arrays Index Position and Value.
 import java.util.stream.IntStream;
 
-public class ArraysIndexPosition {
+public class IndexPosition {
     public static void main(String[] args) {
         int[] Numbers = {10, 20, 30, 40, 50, 100, 90, 80, 70, 60};
 
