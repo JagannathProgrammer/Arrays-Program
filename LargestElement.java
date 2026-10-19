@@ -8,7 +8,6 @@ public class LargestElement {
 
         // Normal Method (Direct Assignment)
         int largest = Numbers[0];
-        
         if(Numbers[1] > largest) largest = Numbers[1];
         if(Numbers[2] > largest) largest = Numbers[2];
         if(Numbers[3] > largest) largest = Numbers[3];
@@ -18,7 +17,6 @@ public class LargestElement {
         if(Numbers[7] > largest) largest = Numbers[7];
         if(Numbers[8] > largest) largest = Numbers[8];
         if(Numbers[9] > largest) largest = Numbers[9];
-        
         System.out.println("Largest Element is: "+largest);  
         
         // Using an For Loop Method.
@@ -29,7 +27,6 @@ public class LargestElement {
             }
         }
         System.out.println("Largest Element is: "+largest);
-
 
         // Using an In-built Method
         int largest1 = Arrays.stream(Numbers).max().getAsInt();
